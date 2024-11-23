@@ -1,0 +1,86 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    height: 50vh;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: monospace;    
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .big-container {
+    width: 60%;
+    border: 5px solid black;
+    background: #CEA2FD;
+    padding: 1em 5em 2em;
+  }
+
+  .main-container {
+    width: 50%;
+    background: white;
+    border-radius: 10px;
+  }
+
+  .main-container > .bottom-section {
+    padding: 1rem;
+  }
+
+.bottom-section .heading {
+    /* color: blue; */
+    margin-bottom: 5px;
+}
+.bottom-section p {
+    /* color: yellow; */
+    font-size: .7em;
+}
+
+  .new-and-improved {
+    background: yellow;
+    width: 45%;
+    padding: .25em;
+    position: relative;
+    border-top-right-radius: 10000000000%;
+    border-bottom-right-radius: 100000000%;
+    top: 5px;
+    left: -10px;
+  }

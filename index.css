@@ -1,0 +1,19 @@
+
+    .assignments_navigation {
+        margin: 20px;
+        font-family: Arial, sans-serif;
+    }
+    .list ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .list li {
+        margin: 10px 0;
+    }
+    .list a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .list a:hover {
+        text-decoration: underline;
+    }
